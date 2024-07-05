@@ -9,4 +9,4 @@ You have 3 lives.
 
 
 This project made me pass the subject with almost full amount of points.
-There are still a few things that could be upgraded
+Notice that there are still a few things that could be upgraded
