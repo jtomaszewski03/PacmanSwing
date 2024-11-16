@@ -1,5 +1,5 @@
 # PacmanSwing
-My own version of Pacman game using Java Swing and some threads (my first project in Java).
+My own simple version of Pacman game using Java Swing and some threads (my first project in Java).
 
 You can choose one map from five available.
 There are 5 different perks to collect from ghosts.
