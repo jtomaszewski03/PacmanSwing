@@ -18,7 +18,7 @@ public class Highscores {
 
     public void readScores() {
         try {
-            FileInputStream inputStream = new FileInputStream("../Pacman/highscores.txt");
+            FileInputStream inputStream = new FileInputStream("./highscores.txt");
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             while (true) scores.add((PlayerScore) objectInputStream.readObject());
         } catch (ClassNotFoundException e) {
@@ -32,7 +32,7 @@ public class Highscores {
 
     public void saveScores() {
         try {
-            FileOutputStream outputStream = new FileOutputStream("../Pacman/highscores.txt");
+            FileOutputStream outputStream = new FileOutputStream("./highscores.txt");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
             scores.sort(Collections.reverseOrder());
             for (PlayerScore x : scores) {
