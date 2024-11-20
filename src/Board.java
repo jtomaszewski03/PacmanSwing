@@ -152,19 +152,19 @@ public class Board {
 
     public void loadBoard(JPanel boardPanel) {
         int scale = PacmanGameFrame.getScreenSize() / boardSize;
-        Image pacman = new ImageIcon("../Pacman/texturePac/pacmanclosed_NULL.png").getImage().getScaledInstance(scale,
+        Image pacman = new ImageIcon("./texturePac/pacmanclosed_NULL.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image wall = new ImageIcon("../Pacman/texturePac/wall.png").getImage().getScaledInstance(scale,
+        Image wall = new ImageIcon("./texturePac/wall.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image food = new ImageIcon("../Pacman/texturePac/food.png").getImage().getScaledInstance(scale,
+        Image food = new ImageIcon("./texturePac/food.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image empty = new ImageIcon("../Pacman/texturePac/empty.png").getImage().getScaledInstance(scale,
+        Image empty = new ImageIcon("./texturePac/empty.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image redEnemy = new ImageIcon("../Pacman/texturePac/redenemy.png").getImage().getScaledInstance(scale,
+        Image redEnemy = new ImageIcon("./texturePac/redenemy.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image yellowEnemy = new ImageIcon("../Pacman/texturePac/yellowenemy.png").getImage().getScaledInstance(scale,
+        Image yellowEnemy = new ImageIcon("./texturePac/yellowenemy.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
-        Image greenEnemy = new ImageIcon("../Pacman/texturePac/greenenemy.png").getImage().getScaledInstance(scale,
+        Image greenEnemy = new ImageIcon("./texturePac/greenenemy.png").getImage().getScaledInstance(scale,
                 scale, Image.SCALE_SMOOTH);
         for (int y = 0; y < boardSize; y++) {
             for (int x = 0; x < boardSize; x++) {
@@ -208,51 +208,51 @@ public class Board {
             for (int x = 0; x < boardSize; x++) {
                 switch (board[y][x]) {
                     case 1 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/wall.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/wall.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 2 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/food.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/food.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 3 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/empty.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/empty.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 0 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/pacmanclosed_NULL.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/pacmanclosed_NULL.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 4 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/redenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/redenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 5 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/yellowenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/yellowenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 6 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/greenenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/greenenemy.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 7 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/freeze.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/freeze.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 8 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/slow.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/slow.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 9 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/hundred.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/hundred.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 10 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/star.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/star.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                     case 11 -> {
-                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/lightning.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+                        ImageIcon scaledIcon = new ImageIcon(new ImageIcon("./texturePac/lightning.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
                         labels[y][x].setIcon(scaledIcon);
                     }
                 }
@@ -265,11 +265,11 @@ public class Board {
         int scale = outerFrame.getHeight() / boardSize;
         ImageIcon scaledCharacter;
         if (character.equals("pacman"))
-            scaledCharacter = new ImageIcon(new ImageIcon("../Pacman/texturePac/pacman_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+            scaledCharacter = new ImageIcon(new ImageIcon("./texturePac/pacman_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
         else
-            scaledCharacter = new ImageIcon(new ImageIcon("../Pacman/texturePac/" + character + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon scaledEmpty = new ImageIcon(new ImageIcon("../Pacman/texturePac/empty.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon scaledFood = new ImageIcon(new ImageIcon("../Pacman/texturePac/food.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+            scaledCharacter = new ImageIcon(new ImageIcon("./texturePac/" + character + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon scaledEmpty = new ImageIcon(new ImageIcon("./texturePac/empty.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon scaledFood = new ImageIcon(new ImageIcon("./texturePac/food.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
         int number = getCharacterNumber(character);
         for (int y = 0; y < boardSize; y++) {
             for (int x = 0; x < boardSize; x++) {
@@ -307,11 +307,11 @@ public class Board {
 
     private void changeNeededIcons(ImageIcon scaledEmpty, ImageIcon scaledCharacter, ImageIcon scaledFood, int number, int y, int x, int y2, int x2) {
         int scale = outerFrame.getHeight() / boardSize;
-        ImageIcon freezePerk = new ImageIcon(new ImageIcon("../Pacman/texturePac/freeze.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon slowPerk = new ImageIcon(new ImageIcon("../Pacman/texturePac/slow.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon hundredPerk = new ImageIcon(new ImageIcon("../Pacman/texturePac/hundred.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon starPerk = new ImageIcon(new ImageIcon("../Pacman/texturePac/star.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon lightningPerk = new ImageIcon(new ImageIcon("../Pacman/texturePac/lightning.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon freezePerk = new ImageIcon(new ImageIcon("./texturePac/freeze.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon slowPerk = new ImageIcon(new ImageIcon("./texturePac/slow.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon hundredPerk = new ImageIcon(new ImageIcon("./texturePac/hundred.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon starPerk = new ImageIcon(new ImageIcon("./texturePac/star.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon lightningPerk = new ImageIcon(new ImageIcon("./texturePac/lightning.png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
         if (number == 0 && isEnemyThere(x2, y2)) return;
         if (number != 0) {
             board[y][x] = getTempOf(number);
@@ -392,9 +392,9 @@ public class Board {
 
     public synchronized void changePacmanImage(Direction direction) {
         int scale = PacmanGameFrame.getScreenSize() / boardSize;
-        ImageIcon scaledPacman = new ImageIcon(new ImageIcon("../Pacman/texturePac/pacman_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon scaledPacmanClosed = new ImageIcon(new ImageIcon("../Pacman/texturePac/pacmanclosed_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
-        ImageIcon scaledHalfPacmanClosed = new ImageIcon(new ImageIcon("../Pacman/texturePac/pacmanhalfclosed_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon scaledPacman = new ImageIcon(new ImageIcon("./texturePac/pacman_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon scaledPacmanClosed = new ImageIcon(new ImageIcon("./texturePac/pacmanclosed_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
+        ImageIcon scaledHalfPacmanClosed = new ImageIcon(new ImageIcon("./texturePac/pacmanhalfclosed_" + direction + ".png").getImage().getScaledInstance(scale, scale, Image.SCALE_SMOOTH));
         for (int y = 0; y < boardSize; y++) {
             for (int x = 0; x < boardSize; x++) {
                 if (board[y][x] == 0) {
