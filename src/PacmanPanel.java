@@ -31,9 +31,9 @@ public class PacmanPanel extends JPanel {
         JPanel infoPanel = new JPanel();
         JLabel scoreLabel = new JLabel("Score " + score);
 
-        threeLivesIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
-        twoLivesIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/2lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
-        oneLifeIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/lastlife.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+        threeLivesIcon = new ImageIcon(new ImageIcon("./texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+        twoLivesIcon = new ImageIcon(new ImageIcon("./texturePac/2lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+        oneLifeIcon = new ImageIcon(new ImageIcon("./texturePac/lastlife.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
         JLabel livesLabel = new JLabel(threeLivesIcon);
         JLabel timeLabel = new JLabel("" + playingTime);
         if (size == 10)
@@ -285,15 +285,15 @@ public class PacmanPanel extends JPanel {
                 else scoreLabel.setPreferredSize(new Dimension((int) (scale * 1.5), scale / 3));
                 livesLabel.setPreferredSize(new Dimension((int) (scale * 2.6), scale / 3));
                 timeLabel.setPreferredSize(new Dimension(scale, scale / 3));
-                threeLivesIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
-                twoLivesIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/2lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
-                oneLifeIcon = new ImageIcon(new ImageIcon("../Pacman/texturePac/lastlife.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+                threeLivesIcon = new ImageIcon(new ImageIcon("./texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+                twoLivesIcon = new ImageIcon(new ImageIcon("./texturePac/2lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+                oneLifeIcon = new ImageIcon(new ImageIcon("./texturePac/lastlife.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
                 switch (amountOfLives) {
                     case 3 -> livesLabel.setIcon(threeLivesIcon);
                     case 2 -> livesLabel.setIcon(twoLivesIcon);
                     case 1 -> livesLabel.setIcon(oneLifeIcon);
                 }
-                new ImageIcon(new ImageIcon("../Pacman/texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
+                new ImageIcon(new ImageIcon("./texturePac/3lives.png").getImage().getScaledInstance(scale, scale / 3, Image.SCALE_SMOOTH));
             }
         });
 
